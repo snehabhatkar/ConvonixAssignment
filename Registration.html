@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Javascript Onsubmit Event Example</title>
+<link href="Style.css" rel="stylesheet"/> <!-- Include CSS File Here-->
+<script src="JavaScriptF.js"></script>  
+</head>
+
+<body onload="document.getElementById('name').focus();">
+<div class="header">
+<h1>Welcome</h1><hr/>
+</div>
+
+<div class="main" style="margin-left:30%;margin-right:32%;" >
+<form action="Success.html" methpd="post">
+<h2>Registration</h2>
+<label>Name :</label>
+<input id="name" name="name" Placeholder="Enter Name" type="text" />
+<label>Email :</label>
+<input id="email" name="email" Placeholder="eg. abc@domain.com" type="text" />
+<label>DOB :</label> &emsp;
+ <select id="day">
+        <option value="dd">Day</option>
+        <script type="text/javascript">
+            for (var i = 1; i < 32; i++)
+            document.write("<option value='" + i + "'>" + i + "</option> ");
+        </script>
+         </select>
+		 &emsp;
+         <select id="month">
+         <option value="Month">Month</option>
+         <option value="1">JAN</option>
+         <option value="2">FEB</option>
+         <option value="3">MAR </option>
+         <option value="4">APR</option>
+         <option value="5">MAY</option>
+         <option value="6">JUN</option>
+         <option value="7">JUL</option>
+         <option value="8">AUG</option>
+         <option value="9">SEP</option>
+         <option value="10">OCT</option>
+         <option value="11">NOV</option>
+         <option value="12">DEC</option>
+        </select>
+
+       &emsp; <select id="year">
+         <option value="Year" Selected >Year</option>
+             <script type="text/javascript">
+                var date = new Date();
+                for (var i = 1975; i <= date.getFullYear(); i++)
+                document.write("<option value='" + i + "'>" + i + "</option> ");
+             </script>
+        </select>
+  <br/>
+  <br/>
+<label>Gender :</label>
+<br/>
+<input id="male" name="gender" type="radio" value="Male"/>
+<label>Male</label>
+<input id="female" name="gender" type="radio" value="Female"/>
+<label>Female</label>
+<br/><br/>
+<label>Description :</label>
+<textarea id="description"  cols="40" Placeholder="Describe yourself" ></textarea>
+<input type="submit" value="Submit" onclick="return ValidationEvent()"/>
+<span style="color:red;float:right">All Fields are Mandetory.</span>
+</form>
+
+</div>
+</body>
+
+</html>

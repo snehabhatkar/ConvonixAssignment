@@ -1,0 +1,27 @@
+Problem statement:
+1. Create a website with a registration form in HTML including following fields:
+	(i) Name
+	Validations: Type: Text
+				 Not Null
+				 Character length should be greater than or equal to 5
+	(ii) Email
+	Validation: Type: Text
+				Not Null
+				Email validation
+	(iii) DOB
+	Validation: Type: Drop down
+				Not Null
+				Validate date
+	(iv) Gender
+	Validation: Type: Radio button
+				Not Null
+				It should be Selected
+	(v) Description
+	Validation: Type: Textbox
+				Not Null
+				Total number of words should be greater than or equal to 10
+	(vi) Button (for submission with onclick event)
+	
+2. Write a javaScript to implement above validations.
+
+3. If all the fields are validated then page should be redirected to next page with "Thank You" Message.
